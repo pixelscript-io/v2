@@ -1,6 +1,6 @@
 <template>
   <div id="container"
-			 class="w-screen h-screen bg-ps-darkBlue flex items-center justify-center">
+			 class="w-screen h-screen bg-ps-medBlue bg-ps-img flex items-center justify-center">
 		<img src="logo.svg"
 				 class="fadeIn" />
 	</div>

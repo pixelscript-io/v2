@@ -1,7 +1,7 @@
 <template>
   <div id="pixels"
-			 class="bg-grad-dark">
-		<div id="top-gradient"></div>
+			 class="bg-ps-medBlue bg-ps-img">
+		<!-- <div id="top-gradient"></div> -->
 	</div>
 </template>
 
@@ -13,7 +13,7 @@
 			}
 		},
 		mounted() {
-			this.fillGrid()
+			// this.fillGrid()
 		},
 		methods: {
 			fillGrid() {
@@ -52,9 +52,9 @@
 		}
 
 		#pixels {
-			display: grid;
+			/* display: grid;
 			grid-template-columns: repeat(auto-fill, 48px);
-			grid-template-rows: repeat(auto-fill, 48px);
+			grid-template-rows: repeat(auto-fill, 48px); */
 			height: 100vh;
 			width: 100vw;
 			z-index: 1;
@@ -68,6 +68,11 @@
 			position: absolute;
 			width: 100vw;
 			z-index: 2;
+		}
+
+		.bg-ps-img {
+			background-image: url('/bg.svg');
+			background-repeat: no-repeat;
 		}
 
 		@keyframes blink {

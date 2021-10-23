@@ -1,3 +1,5 @@
+import tailwindForms from '@tailwindcss/forms'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -46,6 +48,13 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+
+  // Tailwind module configuration
+	tailwindcss: {
+		config: {
+			plugins: [tailwindForms]
+		}
+	},
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'ps-blue': '#0F62FE',
+				'ps-medBlue': '#050E21',
 				'ps-darkBlue': '#010711'
 			},
 			fontFamily: {
