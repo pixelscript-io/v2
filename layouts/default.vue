@@ -13,6 +13,7 @@
 
 	html,
 	body {
+		overflow-x: hidden;
 		@apply bg-ps-medBlue;
 	}
 
@@ -47,13 +48,11 @@
 		background: linear-gradient(180deg, rgba(15,98,254,1) 0%, rgba(0,67,206,1) 100%);
 		position: relative;
 		overflow: hidden;
-		transform: translate3d(0, 0, 0);
 		z-index: 1;
 	}
 
 	.ps-btn:hover {
 		transition: transform 0.45s ease-in-out;
-		transform: perspective(30rem) translate3d(0, 0, 1rem);
 	}
 
 	.ps-btn::after {
@@ -69,12 +68,12 @@
 
 	.ps-btn:hover::after {
 		transition: transform 0.45s ease-in-out;
-		transform: translate3d(500%, 0, 0) rotate(35deg);
+		transform: translate3d(525%, 0, 0) rotate(35deg);
 	}
 
 	.ps-tag:hover {
 		transition: transform 0.2s ease-in-out;
-		transform: perspective(30rem) translate3d(0, 0, 1rem);
+		transform: perspective(30rem);
 	}
 
 	.ps-tag::after {
@@ -94,6 +93,20 @@
 		transition: all 0.2s ease-in-out;
 		top: 0;
 		bottom: 0;
+	}
+
+	.ps-service-bg-left {
+		background-image: url('/bg_left.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.ps-service-bg-right {
+		background-image: url('/bg_right.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
 	#article a {
@@ -138,6 +151,60 @@
 
 	.slideUp {
 		animation: slideUp 1s cubic-bezier(0.25, 0.1, 0.25, 1.0) 1;
+	}
+
+	.iso-bg {
+		background-image: url('/grid_bg.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		height: 50vh;
+		width: 100vw;
+		pointer-events: none;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.bg-proj-1 {
+		background-image: url('/proj-1.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
+	}
+
+	.bg-proj-2 {
+		background-image: url('/proj-2.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
+	}
+
+	.bg-proj-3 {
+		background-image: url('/proj-3.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
+	}
+
+	.bg-proj-4 {
+		background-image: url('/proj-4.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
+	}
+
+	.bg-proj-5 {
+		background-image: url('/proj-5.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
+	}
+
+	.bg-proj-6 {
+		background-image: url('/proj-6.png');
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: center;
 	}
 
 	@keyframes fade {

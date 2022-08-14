@@ -3,27 +3,20 @@
        class="grid grid-cols-12 opacity-0 fixed w-screen py-4 border-b-2 border-ps-blue bg-ps-medBlue bg-ps-img pointer-events-none z-40">
     <div class="col-span-2"></div>
     <div class="col-span-8 flex items-center justify-between">
-      <img src="logo.svg"
-           class="h-6" />
+      <img class="w-28 lg:w-56"
+           src="logo.svg" />
       <div class="flex items-center">
         <NuxtLink to="/home"
                   class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
           Root
         </NuxtLink>
-        <NuxtLink to="/article"
-                  class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-          Writing
-        </NuxtLink>
-        <a href="#"
-           class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-          Design
-        </a>
-        <a href="#"
-           class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-          Tools
+        <a href="JoeResume.pdf"
+           target="_blank"
+           class="inter text-white text-opacity-90 text-sm font-medium mr-0 sm:mr-8 anim-a">
+          Resume
         </a>
         <NuxtLink to="/contact"
-                  class="ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm ml-4">
+                  class="hidden sm:block ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm">
           Let's chat
         </NuxtLink>
       </div>
