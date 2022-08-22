@@ -3,7 +3,7 @@
     <StickyHead :scrollHeight="'window.innerHeight'"
                 @show-chat="showChat = true" />
     <div id="container"
-         class="bg-ps-medBlue bg-ps-img h-screen">
+         class="bg-ps-medBlue bg-ps-img min-h-screen">
       <div class="iso-bg"></div>
       <div class="grid grid-cols-12">
         <div class="col-span-2"></div>
