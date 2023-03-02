@@ -3,8 +3,8 @@
     <StickyHead :scrollHeight="'header'" />
     <div id="header"
          class="grid grid-cols-12 bg-ps-medBlue bg-ps-img">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 py-6 pb-12 flex justify-between items-center">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 py-6 pb-12 flex justify-between items-center">
         <img src="logo.svg"
              class="h-6 fadeIn" />
         <div class="flex items-center fadeIn">
@@ -23,9 +23,9 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="col-span-2"></div>
-      <div class="col-span-2"></div>
-      <div class="col-span-8 py-8">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 py-8">
         <p class="text-white text-3xl font-medium mb-4 fadeIn">
           Projects
         </p>
@@ -34,20 +34,20 @@
           ESports Platform
         </p>
       </div>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
     </div>
 
     <div class="grid grid-cols-12 w-full py-4 bg-white border-b border-gray-200">
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
       <p class="mono text-sm text-gray-800 col-span-8">
         Design
       </p>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
     </div>
 
     <div class="grid grid-cols-12 w-screen bg-gray-50">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 lg:col-span-6 py-8 pr-12"
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 lg:col-span-6 py-8 pr-0 md:pr-12"
            id="article">
         <p class="text-gray-800 text-2xl font-medium pb-4">
           ESports Platform
@@ -75,7 +75,6 @@
           <img src="esports-1.png" />
         </div>
       </div>
-      <div class="bg-gray-50 col-span-2"></div>
     </div>
 
     <Footer />

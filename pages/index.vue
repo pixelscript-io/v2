@@ -3,11 +3,11 @@
     <StickyHead :scrollHeight="'window.innerHeight'"
                 @show-chat="showChat = true" />
     <div id="container"
-         class="bg-ps-medBlue bg-ps-img min-h-screen">
+         class="bg-ps-medBlue bg-ps-img h-screen">
       <div class="iso-bg"></div>
       <div class="grid grid-cols-12">
-        <div class="col-span-2"></div>
-        <div class="col-span-8 flex justify-between pt-24 pb-36 fadeIn">
+        <div class="col-span-1 md:col-span-2"></div>
+        <div class="col-span-10 md:col-span-8 flex justify-between pt-24 pb-24 md:pb-36 fadeIn">
           <img class="w-28 lg:w-56"
                src="logo.svg" />
           <div class="flex items-center fadeIn">
@@ -26,12 +26,12 @@
             </NuxtLink>
           </div>
         </div>
-        <div class="col-span-2"></div>
+        <div class="col-span-1 md:col-span-2"></div>
 
-        <div class="col-span-2"></div>
-        <div class="col-span-8 grid grid-cols-2 gap-x-12">
+        <div class="col-span-1 md:col-span-2"></div>
+        <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12">
           <div class="col-span-2 lg:col-span-1">
-            <p class="text-white text-2xl font-medium mb-1 fadeIn">
+            <p class="text-white text-xl md:text-2xl font-medium mb-1 fadeIn">
               Product Designer &amp; Full Stack Developer
             </p>
             <p class="text-white text-lg text-opacity-90 mb-6 fadeIn">
@@ -52,117 +52,21 @@
       </div>
     </div>
 
-    <!-- <div class="grid grid-cols-12 py-36 bg-white"
-         id="blog-section">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 grid grid-cols-2 gap-x-12">
-        <div>
-          <p class="text-gray-800 text-2xl font-medium mb-1">
-            From the blog
-          </p>
-          <p class="text-gray-800 text-md mb-5">
-            I think it's important for designers to be able to write well. Being able to clearly communicate your thought process is one of the best ways of connecting with your team and, ultimately, your users. Plus, I love sharing my thoughts with a wider community!
-          </p>
-
-          <div class="ps-divider bg-ps-blue mb-6"></div>
-        </div>
-        <div></div>
-        <div>
-          <div class="bg-gray-100 w-full h-56 mb-4"></div>
-          <div class="flex justify-between">
-            <p class="mono text-sm text-gray-600">September 21, 2021</p>
-            <p class="mono text-sm text-gray-600">CSS, Design</p>
-          </div>
-          <a href="#"
-             class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-            Designing beautiful shadows in CSS
-          </a>
-          <p class="text-gray-800 text-sm leading-6 text-opacity-80 mt-4 inter">
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.
-          </p>
-        </div>
-        <div>
-          <div class="mb-8">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-          <div class="mb-8">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-          <div class="mb-8">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-          <div class="mb-8">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-          <div class="mb-8">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-          <div class="">
-            <div class="flex justify-between">
-              <p class="mono text-sm text-gray-600">September 21, 2021</p>
-              <p class="mono text-sm text-gray-600">CSS, Design</p>
-            </div>
-            <a href="#"
-               class="text-gray-800 hover:text-ps-blue text-lg cursor-pointer font-medium anim-a">
-              Designing beautiful shadows in CSS
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-2"></div>
-    </div> -->
-
-    <div class="grid grid-cols-12 py-36 relative z-10 bg-white">
-      <!-- <div class="ps-gradient-gray w-screen left-0 top-0 h-1/2 absolute z-0"></div> -->
-      <div class="col-span-2"></div>
-      <div class="col-span-8 grid grid-cols-2 gap-x-12 z-10">
+    <div class="grid grid-cols-12 py-24 md:py-36 relative z-10 bg-white">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12 z-10">
         <div class="z-10 col-span-2 lg:col-span-1">
-          <p class="text-gray-800 text-2xl font-medium mb-1">
+          <p class="text-gray-800 text-xl md:text-2xl font-medium mb-1">
             Working with me
           </p>
-          <p class="text-gray-800 text-md mb-5">
+          <p class="text-gray-800 text-base mb-5">
             If you've worked with agencies before, you can throw away all your expectations. Working with me is nothing like that. I am the only contact point you'll ever have. I'll never charge you for a receptionist. I am a one-man company and I have no intention of ever changing that.
           </p>
 
           <div class="ps-divider bg-ps-blue mb-6"></div>
         </div>
         <div></div>
-        <div class="col-span-2 lg:col-span-1 mb-8 lg:mb-0">
+        <div class="col-span-2 md:col-span-1 mb-8 lg:mb-0">
           <div class="bg-gray-100 w-full h-56 mb-4 ps-service-bg-left"></div>
           <p class="text-gray-800 text-lg font-medium mb-2">
             Website &amp; Product Design
@@ -269,17 +173,17 @@
           </dl>
         </div>
       </div>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
     </div>
 
-    <div class="bg-ps-medBlue bg-ps-img grid grid-cols-12 py-36">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 grid grid-cols-2 gap-x-12">
-        <div class="col-span-2 lg:col-span-1">
-          <p class="text-white text-2xl font-medium mb-1">
+    <div class="bg-ps-medBlue bg-ps-img grid grid-cols-12 py-24 md:py-36">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12">
+        <div class="col-span-2 md:col-span-1">
+          <p class="text-white text-xl md:text-2xl font-medium mb-1">
             Featured Projects
           </p>
-          <p class="text-white text-lg text-opacity-90 mb-6">
+          <p class="text-white text-base text-opacity-90 mb-6">
             Being a designer and developer, I've worked on a multitude of different types of projects and I'm proud of the work I've done. Here are some of my favorite recent projects.
           </p>
 
@@ -287,10 +191,10 @@
         </div>
         <div></div>
       </div>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
 
-      <div class="col-span-2"></div>
-      <div class="col-span-8 grid grid-cols-3 gap-x-12 gap-y-12 mt-2">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 grid grid-cols-3 gap-x-12 gap-y-12 mt-2">
         <div class="col-span-3 lg:col-span-1">
           <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
                @click="goTo('project-1')"
@@ -412,67 +316,8 @@
             A cryptocurrency derivative trading platform focused on OTC swaps.
           </p>
         </div>
-        <!-- <div>
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               v-show="hoverFive"
-               @mouseover="hoverFive = true"
-               @mouseleave="hoverFive = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-5 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverFive"
-               @mouseover="hoverFive = true"
-               @mouseleave="hoverFive = false"></div>
-          <p class="text-white text-lg font-medium">
-            Mobile Client/Job Portal
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-          </p>
-        </div> -->
-        <!-- <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-5')"
-               v-show="hoverSix"
-               @mouseover="hoverSix = true"
-               @mouseleave="hoverSix = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-6 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverSix"
-               @mouseover="hoverSix = true"
-               @mouseleave="hoverSix = false"></div>
-          <p class="text-white text-lg font-medium">
-            Landscaping Directory App
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-          </p>
-        </div> -->
       </div>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
     </div>
 
     <Footer />

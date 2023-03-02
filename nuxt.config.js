@@ -21,7 +21,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -39,6 +39,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-analytics', {
+      id: 'G-DXCZBPJP2T'
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

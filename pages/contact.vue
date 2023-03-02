@@ -3,8 +3,8 @@
     <StickyHead :scrollHeight="'header'" />
     <div id="header"
          class="grid grid-cols-12 bg-ps-medBlue bg-ps-img">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 py-6 pb-12 flex justify-between items-center">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 py-6 pb-12 flex justify-between items-center">
         <img src="logo.svg"
              class="h-6 fadeIn" />
         <div class="flex items-center fadeIn">
@@ -23,9 +23,9 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="col-span-2"></div>
-      <div class="col-span-2"></div>
-      <div class="col-span-8 py-8">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 py-8">
         <p class="text-white text-3xl font-medium mb-4 fadeIn">
           Let's Chat
         </p>
@@ -34,12 +34,12 @@
           Got a project in mind or just want to talk?
         </p>
       </div>
-      <div class="col-span-2"></div>
+      <div class="col-span-1 md:col-span-2"></div>
     </div>
 
-    <div class="grid grid-cols-12 w-screen bg-gray-50 h-screen">
-      <div class="col-span-2"></div>
-      <div class="col-span-8 lg:col-span-6 py-8 pr-12"
+    <div class="grid grid-cols-12 w-screen bg-gray-50">
+      <div class="col-span-1 md:col-span-2"></div>
+      <div class="col-span-10 md:col-span-8 lg:col-span-6 py-8 pr-0 md:pr-12"
            id="article">
         <p class="bg-blue-50 w-full px-4 py-2 rounded-sm text-blue-600 text-sm font-medium border border-blue-600 mb-4"
            v-if="sent">Your email has been sent!</p>
@@ -99,10 +99,6 @@
           </button>
         </form>
       </div>
-      <div class="bg-gray-50 col-span-2 py-8 pl-12">
-
-      </div>
-      <div class="bg-gray-50 col-span-2"></div>
     </div>
 
     <Footer />

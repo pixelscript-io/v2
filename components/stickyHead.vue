@@ -1,8 +1,8 @@
 <template>
   <div id="scrollHeader"
        class="grid grid-cols-12 opacity-0 fixed w-screen py-4 border-b-2 border-ps-blue bg-ps-medBlue bg-ps-img pointer-events-none z-40">
-    <div class="col-span-2"></div>
-    <div class="col-span-8 flex items-center justify-between">
+    <div class="col-span-1 md:col-span-2"></div>
+    <div class="col-span-10 md:col-span-8 flex items-center justify-between">
       <img class="w-28 lg:w-56"
            src="logo.svg" />
       <div class="flex items-center">
@@ -21,7 +21,7 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="col-span-2"></div>
+    <div class="col-span-1 md:col-span-2"></div>
   </div>
 </template>
 
