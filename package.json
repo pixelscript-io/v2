@@ -1,5 +1,5 @@
 {
-  "name": "Pixelscript",
+  "name": "pixelscript",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -18,7 +18,6 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5"
   }
