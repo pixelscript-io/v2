@@ -22,20 +22,20 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-DXCZBPJP2T'
-      },
-      {
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-DXCZBPJP2T');
-        `
-      }
-    ]
+    // script: [
+    //   {
+    //     async: true,
+    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-DXCZBPJP2T'
+    //   },
+    //   {
+    //     innerHTML: `
+    //       window.dataLayer = window.dataLayer || [];
+    //       function gtag(){dataLayer.push(arguments);}
+    //       gtag('js', new Date());
+    //       gtag('config', 'G-DXCZBPJP2T');
+    //     `
+    //   }
+    // ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -43,8 +43,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: ['@/plugins/gtag'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -61,7 +60,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/google-analytics'
+    // '@nuxtjs/google-analytics'
   ],
 
   // Tailwind module configuration
@@ -78,9 +77,9 @@ export default {
   content: {},
 
   // Google Analytics module configuration
-  googleAnalytics: {
-    id: 'G-DXCZBPJP2T'
-  },
+  // googleAnalytics: {
+  //   id: 'G-DXCZBPJP2T'
+  // },
 
   server: {
 		port: 8080, // default: 3000
