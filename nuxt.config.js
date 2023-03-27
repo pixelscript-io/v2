@@ -22,20 +22,15 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    // script: [
-    //   {
-    //     async: true,
-    //     src: 'https://www.googletagmanager.com/gtag/js?id=G-DXCZBPJP2T'
-    //   },
-    //   {
-    //     innerHTML: `
-    //       window.dataLayer = window.dataLayer || [];
-    //       function gtag(){dataLayer.push(arguments);}
-    //       gtag('js', new Date());
-    //       gtag('config', 'G-DXCZBPJP2T');
-    //     `
-    //   }
-    // ]
+    script: [
+      {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-DXCZBPJP2T",
+          async: true,
+      },
+      {
+          src: "js/ga.js",
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -43,7 +38,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/gtag'],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
