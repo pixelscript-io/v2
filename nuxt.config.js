@@ -22,15 +22,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-DXCZBPJP2T",
-          async: true,
-      },
-      {
-          src: "js/ga.js",
-      }
-    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -55,8 +46,27 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    // '@nuxtjs/google-analytics'
+    '@nuxtjs/google-gtag'
   ],
+
+  'google-gtag': {
+    id: 'UA-258997466-1',
+    config: {
+      anonymize_ip: false, // anonymize IP 
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      // linker: {
+      //   domains: ['pix','domain.org']
+      // }
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
+    // additionalAccounts: [{
+    //   id: 'AW-XXXX-XX',
+    //   config: {
+    //     send_page_view: false
+    //   }
+    // }]
+  },
 
   // Tailwind module configuration
 	tailwindcss: {
