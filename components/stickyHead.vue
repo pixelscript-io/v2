@@ -4,22 +4,8 @@
     <div class="col-span-1 md:col-span-2"></div>
     <div class="col-span-10 md:col-span-8 flex items-center justify-between">
       <img class="w-28 lg:w-56"
-           src="logo.svg" />
-      <div class="flex items-center">
-        <NuxtLink to="/home"
-                  class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-          Root
-        </NuxtLink>
-        <a href="JoeResume.pdf"
-           target="_blank"
-           class="inter text-white text-opacity-90 text-sm font-medium mr-0 sm:mr-8 anim-a">
-          Resume
-        </a>
-        <NuxtLink to="/contact"
-                  class="hidden sm:block ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm">
-          Let's chat
-        </NuxtLink>
-      </div>
+           src="logo.svg"
+           @click="goTo('./')" />
     </div>
     <div class="col-span-1 md:col-span-2"></div>
   </div>

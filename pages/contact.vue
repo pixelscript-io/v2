@@ -6,22 +6,8 @@
       <div class="col-span-1 md:col-span-2"></div>
       <div class="col-span-10 md:col-span-8 py-6 pb-12 flex justify-between items-center">
         <img src="logo.svg"
-             class="h-6 fadeIn" />
-        <div class="flex items-center fadeIn">
-          <NuxtLink to="/home"
-                    class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-            Root
-          </NuxtLink>
-          <a href="JoeResume.pdf"
-             target="_blank"
-             class="inter text-white text-opacity-90 text-sm font-medium mr-0 sm:mr-8 anim-a">
-            Resume
-          </a>
-          <NuxtLink to="/contact"
-                    class="hidden sm:block ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm ml-4">
-            Let's chat
-          </NuxtLink>
-        </div>
+             class="h-6 fadeIn"
+             @click="goTo('./')" />
       </div>
       <div class="col-span-1 md:col-span-2"></div>
       <div class="col-span-1 md:col-span-2"></div>
@@ -154,6 +140,9 @@ export default {
             console.log('FAILED...', error.text)
           }
         )
+    },
+    goTo(route) {
+      this.$router.push(route)
     },
   },
 }

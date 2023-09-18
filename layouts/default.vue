@@ -158,7 +158,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom;
-		height: 50vh;
+		height: 100vh;
 		width: 100vw;
 		pointer-events: none;
 		position: absolute;
