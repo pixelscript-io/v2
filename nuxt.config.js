@@ -29,8 +29,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,9 +38,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    ['@nuxtjs/google-analytics', {
-      id: 'G-DXCZBPJP2T'
-    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,7 +46,27 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/google-gtag'
   ],
+
+  'google-gtag': {
+    id: 'UA-258997466-1',
+    config: {
+      anonymize_ip: false, // anonymize IP 
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      // linker: {
+      //   domains: ['pix','domain.org']
+      // }
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
+    // additionalAccounts: [{
+    //   id: 'AW-XXXX-XX',
+    //   config: {
+    //     send_page_view: false
+    //   }
+    // }]
+  },
 
   // Tailwind module configuration
 	tailwindcss: {
@@ -64,6 +80,11 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // Google Analytics module configuration
+  // googleAnalytics: {
+  //   id: 'G-DXCZBPJP2T'
+  // },
 
   server: {
 		port: 8080, // default: 3000

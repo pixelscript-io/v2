@@ -4,6 +4,10 @@
   </div>
 </template>
 
+<script>
+</script>
+
+
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500&display=swap');
 
