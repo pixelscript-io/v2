@@ -4,13 +4,13 @@
                 @show-chat="showChat = true" />
     <div id="container"
          class="bg-ps-medBlue bg-ps-img h-screen">
-      <div class="iso-bg"></div>
+      <!-- <div class="iso-bg"></div> -->
       <div class="grid grid-cols-12">
         <div class="col-span-1 md:col-span-2"></div>
         <div class="col-span-10 md:col-span-8 flex justify-between pt-24 pb-24 md:pb-36 fadeIn">
           <img class="w-28 lg:w-56"
                src="logo.svg" />
-          <div class="flex items-center fadeIn">
+          <!-- <div class="flex items-center fadeIn">
             <NuxtLink to="/home"
                       class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
               Root
@@ -24,7 +24,7 @@
                       class="hidden sm:block ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm ml-4">
               Let's chat
             </NuxtLink>
-          </div>
+          </div> -->
         </div>
         <div class="col-span-1 md:col-span-2"></div>
 
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-12 py-24 md:py-36 relative z-10 bg-white">
+    <!-- <div class="grid grid-cols-12 py-24 md:py-36 relative z-10 bg-white">
       <div class="col-span-1 md:col-span-2"></div>
       <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12 z-10">
         <div class="z-10 col-span-2 lg:col-span-1">
@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="col-span-1 md:col-span-2"></div>
-    </div>
+    </div> -->
 
     <div class="bg-ps-medBlue bg-ps-img grid grid-cols-12 py-24 md:py-36">
       <div class="col-span-1 md:col-span-2"></div>
@@ -314,6 +314,36 @@
           <div class="ps-divider bg-ps-blue my-3"></div>
           <p class="text-white text-sm leading-6 text-opacity-80 inter">
             A cryptocurrency derivative trading platform focused on OTC swaps.
+          </p>
+        </div>
+        <div class="col-span-3 lg:col-span-1">
+          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
+               @click="goTo('project-5')"
+               v-show="hoverFive"
+               @mouseover="hoverFive = true"
+               @mouseleave="hoverFive = false">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="h-12 w-12"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="white"
+                 stroke-width="2">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <div class="bg-gray-50 bg-proj-5 w-full h-56 rounded-sm mb-4"
+               v-show="!hoverFive"
+               @mouseover="hoverFive = true"
+               @mouseleave="hoverFive = false"></div>
+          <p class="text-white text-lg font-medium">
+            Gamification App Concept
+          </p>
+          <p class="mono text-sm text-white text-opacity-70">Design</p>
+          <div class="ps-divider bg-ps-blue my-3"></div>
+          <p class="text-white text-sm leading-6 text-opacity-80 inter">
+            An app focused on gamifying pickups of physical items from customers.
           </p>
         </div>
       </div>

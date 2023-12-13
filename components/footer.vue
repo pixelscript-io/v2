@@ -4,10 +4,10 @@
     <div class="col-span-1 md:col-span-2"></div>
     <div class="col-span-10 md:col-span-8 flex flex-col">
       <div class="flex justify-between flex-row items-center py-8">
-        <NuxtLink to="/contact"
+        <!-- <NuxtLink to="/contact"
                   class="ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm">
           Let's chat
-        </NuxtLink>
+        </NuxtLink> -->
         <img class="h-8"
              src="logo.svg" />
       </div>
