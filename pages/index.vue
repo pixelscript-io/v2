@@ -14,9 +14,7 @@
       <p class="bio">Helping brands create beautiful, memorable and joyful experiences through web and mobile applications.</p>
 
       <article>
-        <p>My name is Joe, and I bring over fifteen years of dedicated experience in crafting sophisticated and intuitive user interfaces. My professional journey has been marked by a diverse portfolio, encompassing projects for both small-scale local businesses and expansive, enterprise-level corporations. My expertise is not confined to design alone; I am also a seasoned application and web developer, with a specialization in Vue and NodeJS.
-        </p>
-        <p>Central to my approach is a singular, unwavering commitment: to prioritize and deliver exceptional customer experiences in every business and design decision. This guiding principle has been instrumental in my pursuit of excellence, ensuring that each project not only meets but exceeds user expectations, thereby fostering meaningful engagement and satisfaction.
+        <p>My name is Joe, and I bring over fifteen years of experience in building sophisticated and intuitive user interfaces. My career has been marked by a diverse portfolio, involving projects for both small-scale local businesses and expansive, enterprise-level corporations.
         </p>
       </article>
     </aside>
