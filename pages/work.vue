@@ -35,6 +35,12 @@ export default {
     return {
       items: [
         {
+          id: 16,
+          title: 'Reflect',
+          image: 'gflow.png',
+          align: '-873px -263px',
+        },
+        {
           id: 15,
           title: 'Reflect',
           image: 'esports-1.png',
