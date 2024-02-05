@@ -1,356 +1,172 @@
 <template>
   <div>
-    <StickyHead :scrollHeight="'window.innerHeight'"
-                @show-chat="showChat = true" />
-    <div id="container"
-         class="bg-ps-medBlue bg-ps-img h-screen">
-      <!-- <div class="iso-bg"></div> -->
-      <div class="grid grid-cols-12">
-        <div class="col-span-1 md:col-span-2"></div>
-        <div class="col-span-10 md:col-span-8 flex justify-between pt-24 pb-24 md:pb-36 fadeIn">
-          <img class="w-28 lg:w-56"
-               src="logo.svg" />
-          <!-- <div class="flex items-center fadeIn">
-            <NuxtLink to="/home"
-                      class="inter text-white text-opacity-90 text-sm font-medium mr-8 anim-a">
-              Root
-            </NuxtLink>
-            <a href="JoeResume.pdf"
-               target="_blank"
-               class="inter text-white text-opacity-90 text-sm font-medium mr-0 sm:mr-8 anim-a">
-              Resume
-            </a>
-            <NuxtLink to="/contact"
-                      class="hidden sm:block ps-btn flex flex-row items-center text-white text-sm text-opacity-90 font-medium px-4 py-2 transition-all rounded-sm ml-4">
-              Let's chat
-            </NuxtLink>
-          </div> -->
-        </div>
-        <div class="col-span-1 md:col-span-2"></div>
+    <aside>
+      <Header />
 
-        <div class="col-span-1 md:col-span-2"></div>
-        <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12">
-          <div class="col-span-2 lg:col-span-1">
-            <p class="text-white text-xl md:text-2xl font-medium mb-1 fadeIn">
-              Product Designer &amp; Full Stack Developer
-            </p>
-            <p class="text-white text-lg text-opacity-90 mb-6 fadeIn">
-              Helping brands create beautiful, memorable and joyful experiences through web and mobile applications.
-            </p>
+      <h1>I'm Joe</h1>
+      <p class="subtitle">Product Designer &amp; Frontend Developer</p>
+      <div class="divider relative">
+        <img src="boxes.svg"
+             class="boxes" />
+        <div></div>
+        <div></div>
+      </div>
+      <p class="bio">Helping brands create beautiful, memorable and joyful experiences through web and mobile applications.</p>
 
-            <div class="ps-divider bg-ps-blue mb-6 slideInLeft"></div>
+      <article>
+        <p>My name is Joe, and I bring over fifteen years of dedicated experience in crafting sophisticated and intuitive user interfaces. My professional journey has been marked by a diverse portfolio, encompassing projects for both small-scale local businesses and expansive, enterprise-level corporations. My expertise is not confined to design alone; I am also a seasoned application and web developer, with a specialization in Vue and NodeJS.
+        </p>
+        <p>Central to my approach is a singular, unwavering commitment: to prioritize and deliver exceptional customer experiences in every business and design decision. This guiding principle has been instrumental in my pursuit of excellence, ensuring that each project not only meets but exceeds user expectations, thereby fostering meaningful engagement and satisfaction.
+        </p>
+      </article>
+    </aside>
 
-            <p class="text-white text-sm text-opacity-80 leading-6 inter fadeIn">
-              Hello, I'm Joe. I've been passionate about forging elegant and user-friendly interfaces for the previous 15+ years, ranging from small local companies to large enterprise-level corporations.
-              <br /><br />
-              Aside from designing, I'm also an experienced application & web developer specializing in Vue and NodeJS. I make sure that a single primary focus lies behind every business and design decision made: delivering stellar customer experiences.
-            </p>
-          </div>
-          <div class="col-span-0 lg:col-span-1"></div>
-        </div>
-        <div class="col-span-2"></div>
+    <div id="showcase">
+      <div>
+        <img src="logo1.svg"
+             alt="American Express" />
+      </div>
+      <div>
+        <img src="logo2.svg"
+             alt="Integrate" />
+      </div>
+      <div>
+        <img src="logo3.svg"
+             alt="Galvanize" />
+      </div>
+      <div>
+        <img src="logo4.svg"
+             alt="Sevencube" />
+      </div>
+      <div>
+        <img src="logo5.svg"
+             alt="GraphicsFlow" />
+      </div>
+      <div>
+        <img src="logo6.svg"
+             alt="arfinn" />
+      </div>
+      <div>
+        <img src="logo7.svg"
+             alt="Tallwave" />
+      </div>
+      <div>
+        <img src="logo8.svg"
+             alt="InkSoft" />
+      </div>
+      <div>
+        <img src="logo9.svg"
+             alt="JubyCards" />
+      </div>
+      <div>
+        <img src="logo10.svg"
+             alt="ReadyCloud" />
+      </div>
+      <div>
+        <img src="logo11.svg"
+             alt="AppsFlyer" />
+      </div>
+      <div>
+        <img src="logo12.svg"
+             alt="California Pools &amp; Landscape" />
       </div>
     </div>
 
-    <!-- <div class="grid grid-cols-12 py-24 md:py-36 relative z-10 bg-white">
-      <div class="col-span-1 md:col-span-2"></div>
-      <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12 z-10">
-        <div class="z-10 col-span-2 lg:col-span-1">
-          <p class="text-gray-800 text-xl md:text-2xl font-medium mb-1">
-            Working with me
-          </p>
-          <p class="text-gray-800 text-base mb-5">
-            If you've worked with agencies before, you can throw away all your expectations. Working with me is nothing like that. I am the only contact point you'll ever have. I'll never charge you for a receptionist. I am a one-man company and I have no intention of ever changing that.
-          </p>
+    <h2>Experience</h2>
 
-          <div class="ps-divider bg-ps-blue mb-6"></div>
-        </div>
-        <div></div>
-        <div class="col-span-2 md:col-span-1 mb-8 lg:mb-0">
-          <div class="bg-gray-100 w-full h-56 mb-4 ps-service-bg-left"></div>
-          <p class="text-gray-800 text-lg font-medium mb-2">
-            Website &amp; Product Design
-          </p>
-          <p class="text-gray-800 text-sm leading-6 text-opacity-80 inter">
-            With over a decade of design experience, I can help you create a beautiful, functional website that is easy to use and easy to maintain. Ranging from simple landing pages to complex web applications, no task is too big or too small.
-          </p>
-          <dl class="pt-8">
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  Product Design
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  Designing full web applications from scratch is a challenge. I have a lot of experience in products of all sizes from the ground up.
-                </dd>
-              </div>
-            </div>
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  Website Design
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  Websites are a great way to communicate with your users. I can help you create a beautiful, functional website that is easy to use and easy to maintain.
-                </dd>
-              </div>
-            </div>
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  User Experience Research
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  UX Research is a critical part of the design process. I can help you understand your users and what they want to do.
-                </dd>
-              </div>
-            </div>
-            <div class="flex flex-row items-start">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  Design Systems
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  Your design system is the foundation of your product. I can help you create a system that is easy to use and easy to maintain.
-                </dd>
-              </div>
-            </div>
-          </dl>
-        </div>
-        <div class="col-span-2 lg:col-span-1">
-          <div class="bg-gray-100 w-full h-56 mb-4 ps-service-bg-right"></div>
-          <p class="text-gray-800 text-lg font-medium mb-2">
-            Full Stack Development
-          </p>
-          <p class="text-gray-800 text-sm leading-6 text-opacity-80 inter">
-            I offer a full stack development service including the design and development of frontend systems, backend systems and APIs. Together, we can create a robust, scalable and maintainable product. I specialize in Vue and Nuxt for frontend development and NodeJS and Express for backend development.
-          </p>
-          <dl class="pt-8">
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  Frontend Applications
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  I specialize in frontend development with the Vue framework. With a clean codebase and a well-organized architecture, your application will be easy to maintain.
-                </dd>
-              </div>
-            </div>
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  API Design/Development
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  Using NodeJS and Express, I can help you create a robust API to handle your requests and responses, and make your application more scalable.
-                </dd>
-              </div>
-            </div>
-            <div class="flex flex-row items-start mb-4">
-              <img class="h-5 mt-3px mr-3"
-                   src="bullet.svg" />
-              <div>
-                <dt class="text-gray-800 text-md font-medium">
-                  Backend Infrastructure
-                </dt>
-                <dd class="text-gray-800 text-sm text-opacity-80 inter">
-                  The backend of your product is the core of your application. Using NodeJS, I can help you create a robust backend that communicates swiftly and efficiently with your database and frontend application.
-                </dd>
-              </div>
-            </div>
-          </dl>
-        </div>
+    <div id="worklist">
+      <div id="worklist-headings">
+        <span class="heading-year">Year</span>
+        <span class="heading-client">Client</span>
+        <span class="heading-work">Role</span>
+        <span class="heading-agency">Agency</span>
       </div>
-      <div class="col-span-1 md:col-span-2"></div>
-    </div> -->
 
-    <div class="bg-ps-medBlue bg-ps-img grid grid-cols-12 py-24 md:py-36">
-      <div class="col-span-1 md:col-span-2"></div>
-      <div class="col-span-10 md:col-span-8 grid grid-cols-2 gap-x-12">
-        <div class="col-span-2 md:col-span-1">
-          <p class="text-white text-xl md:text-2xl font-medium mb-1">
-            Featured Projects
-          </p>
-          <p class="text-white text-base text-opacity-90 mb-6">
-            Being a designer and developer, I've worked on a multitude of different types of projects and I'm proud of the work I've done. Here are some of my favorite recent projects.
-          </p>
-
-          <div class="ps-divider bg-ps-blue mb-6"></div>
-        </div>
-        <div></div>
+      <div class="worklist-item">
+        <span class="item-year">2023 - 2024</span>
+        <span class="item-client">LiftLog</span>
+        <span class="item-work">Lead Product Designer &amp; Full Stack Developer</span>
+        <span class="item-agency">-</span>
       </div>
-      <div class="col-span-1 md:col-span-2"></div>
-
-      <div class="col-span-1 md:col-span-2"></div>
-      <div class="col-span-10 md:col-span-8 grid grid-cols-3 gap-x-12 gap-y-12 mt-2">
-        <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-1')"
-               v-show="hoverOne"
-               @mouseover="hoverOne = true"
-               @mouseleave="hoverOne = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-1 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverOne"
-               @mouseover="hoverOne = true"
-               @mouseleave="hoverOne = false">
-          </div>
-          <p class="text-white text-lg font-medium">
-            Lead Management App
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design, Frontend, Backend</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter mb-4">
-            A web application that allows users to manage lead data that comes in from a variety of sources.
-          </p>
-        </div>
-        <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-2')"
-               v-show="hoverTwo"
-               @mouseover="hoverTwo = true"
-               @mouseleave="hoverTwo = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-2 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverTwo"
-               @mouseover="hoverTwo = true"
-               @mouseleave="hoverTwo = false"></div>
-          <p class="text-white text-lg font-medium">
-            Dispensary Portal
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Frontend, Backend</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            A web application used by dispensaries to measure how their products affect a variety of symptoms.
-          </p>
-        </div>
-        <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-3')"
-               v-show="hoverThree"
-               @mouseover="hoverThree = true"
-               @mouseleave="hoverThree = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-3 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverThree"
-               @mouseover="hoverThree = true"
-               @mouseleave="hoverThree = false"></div>
-          <p class="text-white text-lg font-medium">
-            ESports Platform
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            A web application for gamers and companies that want to host events and tournaments.
-          </p>
-        </div>
-        <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-4')"
-               v-show="hoverFour"
-               @mouseover="hoverFour = true"
-               @mouseleave="hoverFour = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-4 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverFour"
-               @mouseover="hoverFour = true"
-               @mouseleave="hoverFour = false"></div>
-          <p class="text-white text-lg font-medium">
-            Cryptocurrency Platform
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design, Frontend</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            A cryptocurrency derivative trading platform focused on OTC swaps.
-          </p>
-        </div>
-        <div class="col-span-3 lg:col-span-1">
-          <div class="bg-proj w-full h-56 rounded-sm mb-4 flex items-center justify-center cursor-pointer"
-               @click="goTo('project-5')"
-               v-show="hoverFive"
-               @mouseover="hoverFive = true"
-               @mouseleave="hoverFive = false">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 class="h-12 w-12"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="white"
-                 stroke-width="2">
-              <path stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </div>
-          <div class="bg-gray-50 bg-proj-5 w-full h-56 rounded-sm mb-4"
-               v-show="!hoverFive"
-               @mouseover="hoverFive = true"
-               @mouseleave="hoverFive = false"></div>
-          <p class="text-white text-lg font-medium">
-            Gamification App Concept
-          </p>
-          <p class="mono text-sm text-white text-opacity-70">Design</p>
-          <div class="ps-divider bg-ps-blue my-3"></div>
-          <p class="text-white text-sm leading-6 text-opacity-80 inter">
-            An app focused on gamifying pickups of physical items from customers.
-          </p>
-        </div>
+      <div class="worklist-item">
+        <span class="item-year">2023 - 2024</span>
+        <span class="item-client">JubyCards</span>
+        <span class="item-work">Senior Product Designer &amp; Frontend Developer</span>
+        <span class="item-agency">Sevencube</span>
       </div>
-      <div class="col-span-1 md:col-span-2"></div>
+      <div class="worklist-item">
+        <span class="item-year">2023 - 2024</span>
+        <span class="item-client">Acorn</span>
+        <span class="item-work">Senior Product Designer</span>
+        <span class="item-agency">Sevencube</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2023</span>
+        <span class="item-client">ArfinnMed</span>
+        <span class="item-work">Senior Product Designer</span>
+        <span class="item-agency">Sevencube</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2021 - 2024</span>
+        <span class="item-client">Internal Projects</span>
+        <span class="item-work">Senior Product Designer &amp; Frontend Developer</span>
+        <span class="item-agency">Sevencube</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2020 - 2021</span>
+        <span class="item-client">InkSoft</span>
+        <span class="item-work">Lead Product Designer</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2019</span>
+        <span class="item-client">American Express</span>
+        <span class="item-work">Senior Product Designer</span>
+        <span class="item-agency">Tallwave</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2019</span>
+        <span class="item-client">AppsFlyer</span>
+        <span class="item-work">Product Designer</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2019</span>
+        <span class="item-client">California Pools &amp; Landscape</span>
+        <span class="item-work">Lead Product Designer</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2017 - 2019</span>
+        <span class="item-client">Galvanize Inc</span>
+        <span class="item-work">Professional UI/UX Mentor</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2017 - 2019</span>
+        <span class="item-client">Swapchain</span>
+        <span class="item-work">Director of UI/UX Design &amp; Frontend Developer</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2015 - 2018</span>
+        <span class="item-client">Integrate</span>
+        <span class="item-work">Senior UI/UX Designer</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2013 - 2015</span>
+        <span class="item-client">ReadyCloud</span>
+        <span class="item-work">Creative Director</span>
+        <span class="item-agency">-</span>
+      </div>
+      <div class="worklist-item">
+        <span class="item-year">2010 - 2012</span>
+        <span class="item-client">Local Businesses</span>
+        <span class="item-work">Lead Graphic &amp; Web Designer</span>
+        <span class="item-agency">NetShapers</span>
+      </div>
     </div>
-
-    <Footer />
   </div>
 </template>
 
@@ -359,26 +175,589 @@ export default {
   name: 'Index',
   transition: 'fade',
   data() {
-    return {
-      hoverOne: false,
-      hoverTwo: false,
-      hoverThree: false,
-      hoverFour: false,
-      hoverFive: false,
-      hoverSix: false,
-    }
+    return {}
   },
   mounted() {},
-  methods: {
-    goTo(route) {
-      this.$router.push(route)
-    },
-  },
+  methods: {},
 }
 </script>
 
-<style scoped>
-  .bg-proj {
-    background: rgb(15,98,254);
+<style>
+  h1, h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+    color: White;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 64px 0;
+  }
+
+  /* MQ - 1024 */
+	@media (min-width: 1024px) {
+		h1, h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 64px;
+      line-height: 1;
+      font-weight: 700;
+      color: White;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 100px 0;
+    }
+	}
+
+  .subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: White;
+    margin: 0;
+  }
+
+   /* MQ - 1024 */
+	@media (min-width: 1024px) {
+		.subtitle {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: White;
+      margin: 0;
+    }
+	}
+
+  .divider {
+    height: 2px;
+		width: 100%;
+    display: flex;
+    padding: 16px 0;
+  }
+
+  .divider > div:nth-child(2) {
+    height: 2px;
+		width: 48px;
+    background-color: #0F62FE;
+    margin: 0 8px 0 0;
+  }
+
+  .divider > div:nth-child(3) {
+    background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    width: 100%;
+  }
+
+   /* MQ - 1024 */
+	@media (min-width: 1024px) {
+		.divider {
+      height: 2px;
+      width: 100%;
+      display: flex;
+      padding: 24px 0;
+    }
+
+    .divider > div:nth-child(2) {
+      height: 2px;
+      width: 48px;
+      background-color: #0F62FE;
+      margin: 0 8px 0 0;
+    }
+
+    .divider > div:nth-child(3) {
+      background: rgba(255, 255, 255, 0.3);
+      height: 2px;
+      width: 100%;
+    }
+	}
+
+  .divider > .boxes {
+    display: none;
+    position: absolute;
+    top: -47px;
+    right: -621px;
+  }
+
+  /* MQ - 1024 */
+	@media (min-width: 1024px) {
+    .divider > .boxes {
+      display: block;
+      position: absolute;
+      top: -47px;
+      right: -621px;
+    }
+  }
+
+  .bio {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: White;
+    margin: 0;
+  }
+
+  /* MQ - 1024 */
+	@media (min-width: 1024px) {
+    .bio {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: White;
+      margin: 0;
+    }
+  }
+
+  article {
+    margin: 64px 0 0 0;
+  }
+
+  article > p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: White;
+    margin: 0 0 24px 0;
+    opacity: 0.6;
+  }
+
+  article > p:last-of-type {
+    margin: 0;
+  }
+
+  /* MQ - 1024 */
+	@media (min-width: 1024px) {
+    article {
+      margin: 100px 0 0 0;
+    }
+
+    article > p {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      color: White;
+      margin: 0 0 24px 0;
+      opacity: 0.6;
+    }
+  }
+
+  #showcase {
+    display: grid;
+    margin: 64px 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+  }
+
+  #showcase > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    aspect-ratio: 3 / 2;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #showcase > div:first-of-type {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #showcase > svg {
+    fill: White;
+  }
+
+  /* Adjustments for 2 columns layout */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    #showcase {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      margin: 64px 0;
+    }
+    #showcase > div:nth-child(2n) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 0; /* Remove right border for every second item */
+    }
+    /* Add top border for 2nd item in the first row */
+    #showcase > div:nth-child(2):nth-child(-n+2) {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  /* Adjustments for 3 columns layout */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #showcase {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      margin: 64px 0;
+    }
+    #showcase > div {
+      border-right: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 0;
+    }
+    /* Add top border for 3rd item first row */
+    #showcase > div:nth-child(3):nth-child(-n+3) {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add left border for every fourth item */
+    #showcase > div:nth-child(3n+1) {
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add right border to every third item */
+    #showcase > div:nth-child(3n) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add right border to the 1st and 7th item */
+    #showcase > div:nth-child(3n+1):nth-child(-n+7) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add right border to the fifth item */
+    #showcase > div:nth-child(3n+2):nth-child(-n+5) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add left border to the last item */
+    #showcase > div:last-of-type {
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  /* Original 4 columns layout for larger screens */
+  @media (min-width: 1024px) {
+    #showcase {
+      margin: 0 0 100px 0;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin: 100px 0;
+    }
+    #showcase > div {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 0;
+    }
+    /* Add top border for the first four items */
+    #showcase > div:nth-child(-n+4) {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add a left border for every fifth item */
+    #showcase > div:nth-child(4n+1) {
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    /* Add a bottom border to the 9th item */
+    #showcase > div:nth-last-child(-n+4):nth-child(4n+1) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+  }
+
+  /* Reset bottom border for the last row elements in different layouts */
+  @media (min-width: 640px) {
+    #showcase > div:last-child,
+    #showcase > div:nth-last-child(-n+2):nth-child(2n+1), /* For 2 columns layout */
+    #showcase > div:nth-last-child(-n+3):nth-child(3n+1) { /* For 3 columns layout */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Remove bottom border for last row elements */
+    }
+  }
+
+  .testimonial {
+    background: transparent;
+    width: 680px;
+    margin: 0 0 100px 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .testimonial > .testi-border {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 2px;
+    flex: 1;
+  }
+
+  .testimonial > .testi-border > div:nth-child(1) {
+    background-color: #0F62FE;
+    width: 2px;
+    height: 48px;
+    margin: 0 0 8px 0;
+  }
+
+  .testimonial > .testi-border > div:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 2px;
+    flex: 1;
+  }
+
+  .testimonial > .testi-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 0 24px 36px;
+  }
+
+  .testimonial > .testi-right > .testi-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+    color: White;
+    margin: 0 0 24px 0;
+  }
+
+  .testimonial > .testi-right > .testi-body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: White;
+    margin: 0;
+    opacity: 0.6;
+  }
+
+  .testimonial > .testi-right > .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 36px 0 0 0;
+  }
+
+  .testimonial > .testi-right > .author > .author-img {
+    background: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+  }
+
+  .testimonial > .testi-right > .author > .author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 0 24px;
+  }
+
+  .testimonial > .testi-right > .author > .author-info > .author-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: White;
+    margin: 0;
+  }
+
+  .testimonial > .testi-right > .author > .author-info > .author-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: White;
+    margin: 0;
+    opacity: 0.6;
+  }
+
+  #worklist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 100px 0;
+  }
+
+  #worklist > #worklist-headings {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #worklist > #worklist-headings > span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: White;
+    margin: 0 0 14px 0;
+  }
+
+  #worklist > #worklist-headings > .heading-year {
+    flex: 1;
+  }
+
+  #worklist > #worklist-headings > .heading-client {
+    flex: 1;
+  }
+
+  #worklist > #worklist-headings > .heading-work {
+    flex: 2;
+  }
+
+  #worklist > #worklist-headings > .heading-agency {
+    display: none;
+    flex: 1;
+  }
+
+  .worklist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 4px 0;
+    margin: 0 0 24px 0;
+  }
+
+  .worklist-item > span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: White;
+    opacity: 0.6;
+    margin: 0 0 0 0;
+  }
+
+  .worklist-item > .item-year {
+    flex: 1;
+  }
+
+  .worklist-item > .item-client {
+    flex: 1;
+    opacity: 1;
+    font-size: 18px;
+  }
+
+  .worklist-item > .item-client > a {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #33B1FF;
+    opacity: 1;
+    margin: 0 0 0 0;
+    text-decoration: underline;
+  }
+
+  .worklist-item > .item-client > a:hover {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: White;
+    opacity: 1;
+    margin: 0 0 0 0;
+    text-decoration: underline;
+  }
+
+  .worklist-item > .item-work {
+    flex: 2;
+    font-size: 16px;
+  }
+
+  .worklist-item > .item-agency {
+    display: none;
+    flex: 1;
+  }
+
+  /* MQ - 1024 */
+	@media (min-width: 1024px) {
+    #worklist {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 0 100px 0;
+    }
+
+    #worklist > #worklist-headings {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    #worklist > #worklist-headings > span {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: White;
+      margin: 0 0 18px 0;
+    }
+
+    #worklist > #worklist-headings > .heading-year {
+      flex: 1;
+    }
+
+    #worklist > #worklist-headings > .heading-client {
+      flex: 1;
+    }
+
+    #worklist > #worklist-headings > .heading-work {
+      flex: 2;
+    }
+
+    #worklist > #worklist-headings > .heading-agency {
+      display: flex;
+      flex: 1;
+    }
+
+    .worklist-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 4px 0;
+      margin: 0;
+    }
+
+    .worklist-item > span {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: White;
+      opacity: 0.6;
+      margin: 0 0 0 0;
+    }
+
+    .worklist-item > .item-year {
+      flex: 1;
+    }
+
+    .worklist-item > .item-client {
+      flex: 1;
+      opacity: 1;
+      font-size: 18px;
+    }
+
+    .worklist-item > .item-client > a {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #33B1FF;
+      opacity: 1;
+      margin: 0 0 0 0;
+      text-decoration: underline;
+    }
+
+    .worklist-item > .item-client > a:hover {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: White;
+      opacity: 1;
+      margin: 0 0 0 0;
+      text-decoration: underline;
+    }
+
+    .worklist-item > .item-work {
+      flex: 2;
+      font-size: 16px;
+    }
+
+    .worklist-item > .item-agency {
+      display: flex;
+      flex: 1;
+    }
   }
 </style>

@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Pixelscript',
+    title: 'PixelScript - The Portfolio of Joe Berthelot',
     htmlAttrs: {
       lang: 'en'
     },
