@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="logomark.svg"
+    <img src="~/assets/logomark.svg"
          class="logo fadeIn" />
     <nav>
       <ul>

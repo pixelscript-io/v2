@@ -12,11 +12,25 @@
     <aside>
       <Header />
 
-      <h1>Work</h1>
+      <h1>Private Collection</h1>
     </aside>
+
+    <h3>Email Templates</h3>
 
     <div id="workgrid">
       <div v-for="item in items"
+           :key="item.id"
+           @click="openLightbox(item.image)"
+           @mousemove="handleMouseMove"
+           @mouseleave="handleMouseLeave"
+           :style="'background-image: url('+ item.image +'); background-position: '+ item.align +';'">
+      </div>
+    </div>
+
+    <h3>Websites &amp; Applications</h3>
+
+    <div id="workgrid2">
+      <div v-for="item in items2"
            :key="item.id"
            @click="openLightbox(item.image)"
            @mousemove="handleMouseMove"
@@ -35,100 +49,36 @@ export default {
     return {
       items: [
         {
-          id: 16,
+          id: 0,
           title: 'Reflect',
-          image: 'gflow.png',
-          align: '-873px -263px',
-        },
-        {
-          id: 15,
-          title: 'Reflect',
-          image: 'esports-1.png',
-          align: '-119px -159px',
-        },
-        {
-          id: 1,
-          title: 'Reflect',
-          image: 'reflect1.jpg',
-          align: '-225px -629px',
-        },
-        {
-          id: 13,
-          title: 'Reflect',
-          image: 'swap.png',
-          align: '-1090px -179px',
+          image: 'email1.png',
+          align: '-266px -286px',
         },
         {
           id: 2,
           title: 'Reflect',
-          image: 'api1.jpg',
-          align: '-163px -57px',
+          image: 'email3.jpg',
+          align: '-66px -421px',
+        },
+      ],
+      items2: [
+        {
+          id: 0,
+          title: 'Reflect',
+          image: 'website3.jpg',
+          align: '-626px -312px',
         },
         {
-          id: 3,
+          id: 1,
           title: 'Reflect',
-          image: 'canvas1.jpg',
-          align: '-415px -478px',
+          image: 'website2.jpg',
+          align: '-665px -169px',
         },
         {
-          id: 4,
+          id: 1,
           title: 'Reflect',
-          image: 'phone1.png',
-          align: '-499px -250px',
-        },
-        {
-          id: 5,
-          title: 'Reflect',
-          image: 'artboard_4x.png',
-          align: '-229px -183px',
-        },
-        {
-          id: 6,
-          title: 'Reflect',
-          image: 'artboard.png',
-          align: '-212px -73px',
-        },
-        {
-          id: 14,
-          title: 'Reflect',
-          image: 'rhiz.png',
-          align: '-229px -50px',
-        },
-        {
-          id: 7,
-          title: 'Reflect',
-          image: 'spacex.png',
-          align: '-276px -296px',
-        },
-        {
-          id: 8,
-          title: 'Reflect',
-          image: 'files.png',
-          align: '-241px -71px',
-        },
-        {
-          id: 9,
-          title: 'Reflect',
-          image: 'yld.png',
-          align: '-99px -1646px',
-        },
-        {
-          id: 10,
-          title: 'Reflect',
-          image: 'chat-1.png',
-          align: '-57px -8px',
-        },
-        {
-          id: 11,
-          title: 'Reflect',
-          image: 'drib.png',
-          align: '-2px -250px',
-        },
-        {
-          id: 12,
-          title: 'Reflect',
-          image: 'RC.png',
-          align: '-3px -7px',
+          image: 'website4.png',
+          align: '-1006px -217px',
         },
       ],
       isLightboxVisible: false, // Controls the visibility of the lightbox
@@ -177,6 +127,15 @@ export default {
     margin: 64px 0;
   }
 
+	h3 {
+			font-family: 'Outfit', sans-serif;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 1;
+			color: White;
+			margin: 48px 0 16px 0;
+		}
+
   /* MQ - 1024 */
 	@media (min-width: 1024px) {
 		h1, h2 {
@@ -193,35 +152,40 @@ export default {
     }
 	}
 
-	#workgrid {
+	#workgrid2 {
+		margin-bottom: 64px !important;
+	}
+
+	#workgrid,
+	#workgrid2 {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(12, 1fr);
 		gap: 32px;
-		margin: 64px 0;
+		margin: 32px 0;
 	}
 
 	@media (min-width: 440px) {
-		#workgrid {
+		#workgrid,
+	#workgrid2 {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(6, 1fr);
 			gap: 32px;
-			margin: 64px 0;
+			margin: 32px 0;
 		}
 	}
 
 	@media (min-width: 1024px) {
-		#workgrid {
+		#workgrid,
+	#workgrid2 {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(4, 1fr);
 			gap: 32px;
-			margin: 64px 0;
+			margin: 32px 0;
 		}
 	}
 
-	#workgrid > div {
+	#workgrid > div,
+	#workgrid2 > div{
 		cursor: pointer;
 		border-radius: 8px;
 		aspect-ratio: 1 / 1;

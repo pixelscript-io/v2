@@ -112,7 +112,7 @@
       </div>
       <div class="worklist-item">
         <span class="item-year">2020 - 2021</span>
-        <span class="item-client">InkSoft</span>
+        <span class="item-client">GraphicsFlow</span>
         <span class="item-work">Lead Product Designer</span>
         <span class="item-agency">-</span>
       </div>
@@ -180,7 +180,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   h1, h2 {
     font-family: 'Outfit', sans-serif;
     font-size: 48px;

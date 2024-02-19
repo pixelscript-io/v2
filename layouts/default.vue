@@ -15,7 +15,7 @@
         <li><a href="mailto:joe@pixelscript.io">Contact</a></li>
       </ul>
 
-      <p class="copyright"><img src="logomark.svg"
+      <p class="copyright"><img src="~/assets/logomark.svg"
              class="logo fadeIn" /><span>&copy; 2024 Joe Berthelot - PixelScript</span></p>
     </footer>
   </div>

@@ -9,7 +9,7 @@
           Let's chat
         </NuxtLink> -->
         <img class="h-8"
-             src="logo.svg" />
+             src="~/assets/logo.svg" />
       </div>
       <div class="w-full bg-white bg-opacity-5 h-1px mb-4"></div>
       <div class="flex justify-between w-full">
