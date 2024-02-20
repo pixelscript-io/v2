@@ -82,14 +82,16 @@
 
       <div class="worklist-item">
         <span class="item-year">2023 - 2024</span>
-        <span class="item-client">LiftLog</span>
+        <span class="item-client">
+          <NuxtLink to="/case/liftlog">LiftLog</NuxtLink>
+        </span>
         <span class="item-work">Lead Product Designer &amp; Full Stack Developer</span>
         <span class="item-agency">-</span>
       </div>
       <div class="worklist-item">
         <span class="item-year">2023 - 2024</span>
         <span class="item-client">JubyCards</span>
-        <span class="item-work">Senior Product Designer &amp; Frontend Developer</span>
+        <span class="item-work">Frontend Developer</span>
         <span class="item-agency">Sevencube</span>
       </div>
       <div class="worklist-item">
@@ -634,7 +636,7 @@ export default {
     color: #33B1FF;
     opacity: 1;
     margin: 0 0 0 0;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .worklist-item > .item-client > a:hover {
@@ -644,7 +646,7 @@ export default {
     color: White;
     opacity: 1;
     margin: 0 0 0 0;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .worklist-item > .item-work {
@@ -735,7 +737,7 @@ export default {
       color: #33B1FF;
       opacity: 1;
       margin: 0 0 0 0;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .worklist-item > .item-client > a:hover {
@@ -745,7 +747,7 @@ export default {
       color: White;
       opacity: 1;
       margin: 0 0 0 0;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .worklist-item > .item-work {

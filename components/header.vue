@@ -62,6 +62,7 @@ export default {}
 	}
 
 	header > nav > ul > li:hover {
+		color: #33B1FF;
 		opacity: 1;
 	}
 
@@ -71,7 +72,7 @@ export default {}
 	}
 
 	header > nav > ul > li.active:hover {
-		color: White;
+		color: #33B1FF;
 		opacity: 1;
 	}
 
@@ -81,7 +82,7 @@ export default {}
 		}
 
 		.nuxt-link-exact-active:hover {
-			color: White;
+			color: #33B1FF;
 			opacity: 1;
 		}
 
@@ -128,6 +129,7 @@ export default {}
 		}
 
 		header > nav > ul > li:hover {
+			color: #33B1FF;
 			opacity: 1;
 		}
 
@@ -137,7 +139,7 @@ export default {}
 		}
 
 		header > nav > ul > li.active:hover {
-			color: White;
+			color: #33B1FF;
 			opacity: 1;
 		}
 	}
@@ -187,6 +189,17 @@ export default {}
 		}
 
 		header > nav > ul > li:hover {
+			color: #33B1FF;
+			opacity: 1;
+		}
+
+		header > nav > ul > li.active {
+			color: #33B1FF;
+			opacity: 1;
+		}
+
+		header > nav > ul > li.active:hover {
+			color: #33B1FF;
 			opacity: 1;
 		}
 	}
